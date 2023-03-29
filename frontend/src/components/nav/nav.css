@@ -1,0 +1,11 @@
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+}
