@@ -11,6 +11,7 @@ const PORT = 7777;
 const app = express();
 
 //Middleware
+app.use(cors());
 app.use(express.json());
 
 //Methods & Routes

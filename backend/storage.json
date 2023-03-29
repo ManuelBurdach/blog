@@ -1,5 +1,12 @@
 [
   {
-    "bla": "MAnuel"
+    "title": "Title",
+    "text": "blasldk qsödkaöskdj askjd laksjdlk asjf",
+    "link": "http://localhost:7777/images/bild.png"
+  },
+  {
+    "title": "Title",
+    "text": "blasldk qsödkaöskdj askjd laksjdlk asjf",
+    "link": "http://localhost:7777/images/bild.png"
   }
 ]

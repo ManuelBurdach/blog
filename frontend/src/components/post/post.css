@@ -1,0 +1,14 @@
+.post {
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  color: black;
+  width: 300px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.post:hover {
+  opacity: 0.8;
+}

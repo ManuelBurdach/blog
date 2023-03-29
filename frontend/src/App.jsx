@@ -2,6 +2,8 @@ import "./App.css";
 import Header from "./components/header/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/nav";
+import Home from "./pages/home/home";
+import Admin from "./pages/admin/admin";
 
 function App() {
   return (
@@ -12,10 +14,12 @@ function App() {
         {/* HEADER */}
         <Header />
         {/* MAIN */}
-        <Routes>
-          <Route path="/" element={<h1>Home</h1>}></Route>
-          <Route path="/admin" element={<h1>Admin</h1>}></Route>
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/admin" element={<Admin />}></Route>
+          </Routes>
+        </main>
       </div>
     </BrowserRouter>
   );

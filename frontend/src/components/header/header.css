@@ -1,5 +1,9 @@
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 500px;
   background-color: red;
   margin-top: 44px;
+  padding: 20px;
 }
