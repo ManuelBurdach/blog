@@ -5,7 +5,6 @@ const formInput = { title: "", text: "", link: "" };
 const Admin = () => {
   const save = (e) => {
     e.preventDefault();
-    console.log("Hallo");
     const formData = new FormData(e.target);
     fetch("http://localhost:7777/api/v1/posts", {
       method: "POST",

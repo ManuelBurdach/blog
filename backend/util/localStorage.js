@@ -22,3 +22,24 @@ export const save = (item) => {
     });
   });
 };
+
+export const deletePost = (paramId) => {
+  return new Promise((resolve, reject) => {
+    load().then((posts) => {
+      let postIndex = posts.findIndex((post) => post.id === paramId);
+      //Delete Img
+      let postLink = posts[postIndex].link;
+      fs.rm("./" + postLink, (err) => {
+        if (err) reject(err);
+        else {
+          //Delete Object
+          posts.splice(postIndex, 1);
+          fs.writeFile(STORAGE_PATH, JSON.stringify(posts, null, 2), (err) => {
+            if (err) reject(err);
+            else resolve(posts);
+          });
+        }
+      });
+    });
+  });
+};

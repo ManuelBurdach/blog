@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 import multer from "multer";
-import { load, save } from "./util/localStorage.js";
+import { deletePost, load, save } from "./util/localStorage.js";
 import morgan from "morgan";
 
 //Const
@@ -40,6 +40,15 @@ app.post("/api/v1/posts", upload.single("link"), (req, res) => {
   post.link = req.file.path;
   save(post)
     .then((posts) => res.json(posts))
+    .catch((err) => res.json("Errror"));
+});
+
+app.delete("/api/v1/deletePost/:id", (req, res) => {
+  let paramId = req.params.id;
+  deletePost(paramId)
+    .then((posts) => {
+      res.json(posts);
+    })
     .catch((err) => res.json("Errror"));
 });
 

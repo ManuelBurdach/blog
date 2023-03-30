@@ -34,3 +34,12 @@
 .postDiv a {
   color: var(--nav-a-active);
 }
+
+.postDiv a:first-child {
+  color: rgb(245, 56, 56);
+}
+
+.postDiv a:nth-of-type(2) {
+  color: rgb(56, 192, 245);
+  margin: 0;
+}
