@@ -1,5 +1,7 @@
 import "./admin.css";
 
+const formInput = { title: "", text: "", link: "" };
+
 const Admin = () => {
   const save = (e) => {
     e.preventDefault();
@@ -13,8 +15,22 @@ const Admin = () => {
   return (
     <section className="admin">
       <form onSubmit={save}>
-        <input name="title" type="text" placeholder="Title" />
-        <textarea name="text" cols="30" rows="10" placeholder="Text"></textarea>
+        <input
+          name="title"
+          type="text"
+          placeholder="Title"
+          onChange={(e) => {
+            formInput.title = e.target.value;
+          }}
+        />
+        <textarea
+          name="text"
+          rows="5"
+          placeholder="Text"
+          onChange={(e) => {
+            formInput.text = e.target.value;
+          }}
+        ></textarea>
         <input name="link" type="file" />
         <input type="submit" value="Submit blog post" />
       </form>

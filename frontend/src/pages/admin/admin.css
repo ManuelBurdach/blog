@@ -8,22 +8,31 @@
 .admin form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(61, 104, 223);
+  background-color: rgb(133, 133, 133);
   padding: 20px;
   border-radius: 10px;
+  width: 80%;
 }
 
 .admin form input,
 .admin form textarea {
-  line-height: 30px;
-  margin: 5px 0;
-  box-shadow: 0 0 5px rgb(255, 255, 255);
+  margin: 10px 0;
+  box-shadow: 0 0 5px rgb(41, 40, 40);
   text-align: center;
   border: none;
   border-radius: 5px;
-  background-color: rgb(45, 14, 108);
+  background-color: rgb(44, 40, 54);
+  font-size: 18px;
+  padding: 8px;
 }
 
 .admin form input[type="submit"] {
-  background-color: rgb(191, 24, 160);
+  background-color: rgb(84, 212, 133);
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.admin form input[type="submit"]:hover {
+  opacity: 0.8;
 }

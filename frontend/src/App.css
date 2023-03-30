@@ -28,5 +28,9 @@ footer {
   max-width: var(--max-width-website);
   margin: 0 auto;
   padding: var(--gerneral-padding);
-  box-shadow: 0 0 10px -5px black;
+}
+
+main {
+  border-left: 2px solid var(--footer-bg);
+  border-right: 2px solid var(--footer-bg);
 }
