@@ -1,9 +1,9 @@
 import "./header.css";
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <header>
-      <h1>HEADER</h1>
+      <h1>{title}</h1>
     </header>
   );
 };

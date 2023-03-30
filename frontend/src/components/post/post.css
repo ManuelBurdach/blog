@@ -1,14 +1,21 @@
 .post {
-  background-color: bisque;
+  background-color: rgb(252, 251, 251);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 5px black;
   color: black;
-  width: 300px;
+  width: 400px;
   cursor: pointer;
   margin: 10px;
+  opacity: 0.8;
 }
 
 .post:hover {
-  opacity: 0.8;
+  opacity: 1;
+}
+
+.post img {
+  width: calc(100% + 20px);
+  margin: -10px 10px 10px -10px;
+  border-radius: 10px 10px 0 0;
 }

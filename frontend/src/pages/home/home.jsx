@@ -6,11 +6,10 @@ import { v4 as uuidv4 } from "uuid";
 const Home = () => {
   const [posts, setPosts] = useState();
   useEffect(() => {
-    fetch("http://localhost:7777/api/v1/posts")
+    fetch("http://localhost:7777/api/v1/posts/all")
       .then((res) => res.json())
       .then((posts) => {
         setPosts(posts);
-        console.log(posts);
       })
       .catch((err) => {
         console.log(err);

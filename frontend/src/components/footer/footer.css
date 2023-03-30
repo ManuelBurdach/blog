@@ -1,0 +1,5 @@
+footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  color: rgb(81, 80, 80);
+}

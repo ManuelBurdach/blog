@@ -3,8 +3,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgb(28, 27, 27);
-  padding: 10px;
+  background-color: var(--footer-bg);
   display: flex;
   justify-content: flex-end;
   z-index: 100;
@@ -16,10 +15,10 @@ nav a {
 }
 
 nav a:hover {
-  color: yellow;
+  color: var(--nav-a-hover);
 }
 
 /* NavLink active class */
 .active {
-  color: rgb(35, 218, 68);
+  color: var(--nav-a-active);
 }

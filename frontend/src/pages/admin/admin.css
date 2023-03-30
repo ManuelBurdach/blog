@@ -4,3 +4,26 @@
   justify-content: center;
   padding: 20px;
 }
+
+.admin form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(61, 104, 223);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.admin form input,
+.admin form textarea {
+  line-height: 30px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(45, 14, 108);
+}
+
+.admin form input[type="submit"] {
+  background-color: rgb(191, 24, 160);
+}

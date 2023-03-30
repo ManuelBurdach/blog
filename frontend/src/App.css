@@ -1,5 +1,14 @@
 /* GLOABAL STYLE ---------------------------- */
 
+:root {
+  --max-width-website: 2000px;
+  --nav-bg: rgb(28, 27, 27);
+  --footer-bg: rgb(28, 27, 27);
+  --nav-a-hover: yellow;
+  --nav-a-active: rgb(35, 218, 68);
+  --gerneral-padding: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +19,14 @@ a {
   font-weight: 800;
   color: grey;
   text-decoration: inherit;
+}
+
+nav,
+header,
+main,
+footer {
+  max-width: var(--max-width-website);
+  margin: 0 auto;
+  padding: var(--gerneral-padding);
+  box-shadow: 0 0 10px -5px black;
 }

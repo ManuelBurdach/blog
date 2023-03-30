@@ -1,0 +1,36 @@
+.postDetailImg {
+  width: 100%;
+  margin-top: calc(44px - var(--gerneral-padding)); /* Wegen Nav */
+}
+
+.postDetailImg img {
+  width: calc(100% + var(--gerneral-padding) * 2);
+  margin-left: calc(0px - var(--gerneral-padding));
+}
+
+.postDetail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.postDiv {
+  width: 80%;
+}
+
+.postDiv > * {
+  margin: 30px;
+}
+
+.postDiv h2 {
+  font-size: 36px;
+}
+
+.postDiv p {
+  text-align: justify;
+}
+
+.postDiv a {
+  color: var(--nav-a-active);
+}

@@ -3,7 +3,12 @@ header {
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: red;
+  background: url("http://localhost:7777/images/blog2") no-repeat;
+  background-size: cover;
+  background-position: center center;
   margin-top: 44px;
-  padding: 20px;
+}
+
+header h1 {
+  text-transform: uppercase;
 }

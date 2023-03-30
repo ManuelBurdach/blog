@@ -13,6 +13,7 @@ export const load = () => {
 export const save = (item) => {
   return new Promise((resolve, reject) => {
     load().then((posts) => {
+      item.id = `${posts.length + 1}`; // Neuem item eine unique ID geben
       posts.push(item);
       fs.writeFile(STORAGE_PATH, JSON.stringify(posts, null, 2), (err) => {
         if (err) reject(err);
